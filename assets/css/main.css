@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 *{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -193,8 +193,8 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: #000000;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --default-color: #510d0d;
+  --heading-color: #2a16c5;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -206,7 +206,10 @@ h6 {
   line-height: 1;
 }
 
-
+.header .logo img {
+  max-height: 32px;
+  margin-right: 8px;
+}
 
 .apps {
   display: flex;
@@ -241,7 +244,7 @@ h6 {
 
 
 .midas-logo {
-  max-height: 250px;
+  max-height: 50px;
   height: auto;
   width: auto;
   display: block;
@@ -565,6 +568,7 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .footer .social-links {
@@ -592,7 +596,7 @@ h6 {
 
 .footer .credits {
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 18px;
   text-align: center;
   color: #D4AF37;
 }
@@ -763,7 +767,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 92px;
   overflow: clip;
 }
@@ -797,10 +801,10 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 320px;
+  width: 150px;
   height: 3px;
   /* background: var(--accent-color); */
-  background: #219fff;
+  background: #ddbf00;
   left: 0;
   right: 0;
   bottom: 0;
@@ -954,7 +958,7 @@ section,
   width: 150px;
   height: 3px;
   background: var(--accent-color);
-  background: #0aa6f4;
+  background: #e3c500;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1086,11 +1090,11 @@ section,
 @media (min-width: 1365px) {
   .services .service-item:hover {
     transform: translateY(-10px);
-    border-color: var(--accent-color);
+    border-color: rgb(188, 188, 188);
   }
 
   .services .service-item:hover h3 {
-    color: var(--accent-color);
+    color: rgb(187, 135, 2);
   }
 }
 
@@ -1486,6 +1490,8 @@ section,
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin-bottom: 30px;
+   border: 1px solid rgb(175, 172, 172);
+
 }
 
 .contact .info-item i {
@@ -1523,6 +1529,8 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+    border: 1px solid rgb(175, 172, 172);
+
 }
 
 .contact .info-item {
