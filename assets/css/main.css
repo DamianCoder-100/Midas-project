@@ -1081,9 +1081,7 @@ section,
   /* filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg); */
 }
 
-.box-color .service-item{
- background: linear-gradient(135deg, #b88e29, #f2c94c);
-}
+
 
 @media (min-width: 1365px) {
   .services .service-item:hover {
