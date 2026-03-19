@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 *{
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -124,10 +124,7 @@ a:hover {
   text-decoration: none;
 }
 
-.midas-logo {
-  height: 6 50px;
-  width: auto;
-}
+
 
 h1,
 h2,
@@ -209,10 +206,7 @@ h6 {
   line-height: 1;
 }
 
-.header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
-}
+
 
 .apps {
   display: flex;
@@ -245,12 +239,18 @@ h6 {
   cursor: pointer;
 }
 
+
+.midas-logo {
+  max-height: 250px;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
 .size-pics:hover {
   /* width: 450px;
   height: 350px; */
 }
-
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -983,7 +983,7 @@ section,
   padding: 0 0 20px 20px;
   margin-top: -2px;
   /* border-left: 2px solid var(--accent-color); */
-  border-left: 2px solid #27a4f1;
+  border-left: 3px solid #f1ea27;
   position: relative;
 }
 
@@ -1026,7 +1026,7 @@ section,
   top: 0;
   background: var(--background-color);
   /* border: 2px solid var(--accent-color); */
-  border: 2px solid #3a70f7;
+  border: 3px solid #f7ee3a;
 }
 
 /*--------------------------------------------------------------
@@ -1367,7 +1367,7 @@ section,
 
 .testimonials:before {
   content: "";
-  background: color-mix(in srgb, rgb(0, 200, 255) , transparent 30%);
+  background: color-mix(in srgb, rgba(252, 218, 83, 0.628) , transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1523,6 +1523,13 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+}
+
+.contact .info-item {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;      
+  text-align: center;       
 }
 
 @media (max-width: 575px) {
