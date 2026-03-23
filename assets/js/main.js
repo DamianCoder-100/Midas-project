@@ -249,3 +249,4 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+document.getElementById("year").textContent = new Date().getFullYear();

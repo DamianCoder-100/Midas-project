@@ -680,6 +680,8 @@ h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -689,12 +691,11 @@ h6 {
   opacity: 0;
   right: 15px;
   bottom: -15px;
-  /* z-index: 99999; */
-  width: 60px;
-  /* height: 44px; */
+  z-index: 99999;
+  width: 44px;
+  height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
-  z-index: 90;
 }
 
 .scroll-top i {
@@ -703,9 +704,13 @@ h6 {
   line-height: 0;
 }
 
+.arrow-pic{
+  width: 60px;
+  transform: rotate(90deg);
+}
+
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+  transform: translateY(-3px)
 }
 
 .scroll-top.active {
@@ -713,7 +718,6 @@ h6 {
   opacity: 1;
   bottom: 15px;
 }
-
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -1310,12 +1314,14 @@ section,
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
   padding-right: 5px;
+  font-weight: 700;
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: #059649;
 }
 
 .faq .faq-container .faq-item .faq-content {
