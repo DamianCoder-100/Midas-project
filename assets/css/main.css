@@ -776,6 +776,14 @@ section,
   overflow: clip;
 }
 
+.google-maps{
+    color: var(--default-color);
+  background-color: var(--background-color);
+  /* padding: 20px 0; */
+  /* scroll-margin-top: 92px; */
+  /* overflow: clip; */
+
+}
 @media (max-width: 1199px) {
 
   section,
