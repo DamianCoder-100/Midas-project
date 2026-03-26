@@ -210,7 +210,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 70px;
   margin-right: 8px;
 }
 
@@ -247,9 +247,7 @@ h6 {
 
 
 .midas-logo {
-  max-height: 50px;
-  height: auto;
-  width: auto;
+  width: ;
   display: block;
 }
 
@@ -634,7 +632,7 @@ h6 {
 }
 
 .media-icons {
- 
+
   width: 55px;
 
 }
@@ -1093,7 +1091,10 @@ section,
   margin-bottom: 20px;
   font-size: 28px;
   transition: ease-in-out 0.3s;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
 }
+
+
 
 .services .service-item h3 {
   font-weight: 700;
@@ -1323,11 +1324,12 @@ section,
   margin-bottom: 20px;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .faq-container .faq-item:hover {
 
-  border: 1px red;
+  border: 1px solid rgb(176, 176, 176);
 }
 
 .faq .faq-container .faq-item:last-child {
@@ -1351,11 +1353,9 @@ section,
   font-weight: 700;
 }
 
-.faq .faq-container .faq-item h3:hover {
-  /* color: var(--accent-color); */
-  color: #059649;
+/* .faq .faq-container .faq-item h3:hover {
 
-}
+} */
 
 .faq .faq-container .faq-item .faq-content {
   display: grid;
@@ -1410,7 +1410,7 @@ section,
 
 .testimonials:before {
   content: "";
-  background: color-mix(in srgb, rgba(252, 218, 83, 0.628), transparent 30%);
+  background: color-mix(in srgb, rgba(252, 218, 83, 0.628), transparent 40%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1438,6 +1438,8 @@ section,
 
 .testimonials .testimonial-item {
   text-align: center;
+  font-weight: 700;
+  color: rgb(137, 137, 137);
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1445,18 +1447,21 @@ section,
   border-radius: 50%;
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
+
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #2e3330;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   margin: 0 0 15px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 40%); */
+  color: #6a6a6a;
 }
 
 .testimonials .testimonial-item .stars {
@@ -1470,7 +1475,8 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 40%); */
+  color: #322d05;
   font-size: 26px;
   line-height: 0;
 }
@@ -1506,12 +1512,12 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
+  background-color: color-mix(in srgb, rgb(77, 73, 50), transparent 0%);
   opacity: 0.5;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--default-color);
+  background-color: rgb(68, 68, 255);
   opacity: 1;
 }
 
@@ -1524,6 +1530,10 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact .container {
+  /* margin-top: -100px; */
+}
+
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1611,6 +1621,8 @@ section,
 }
 
 .contact .php-email-form button[type=submit] {
+  position: relative;
+  overflow: hidden;
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1625,11 +1637,40 @@ section,
   color: #212529;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type=submit]::before {
 
-  font-weight: 700;
-  /* background: color-mix(in srgb, var(--accent-color), transparent 20%); */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      #ffd95a 50%,
+      transparent);
+  transform: skewX(-25deg);
+
+
 }
+
+
+.contact .php-email-form button[type=submit]:hover::before {
+  animation: shine 1s ease 0.2s 2;
+}
+
+/* Animation */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+
+  100% {
+    left: 125%;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
