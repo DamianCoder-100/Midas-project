@@ -577,6 +577,7 @@ h6 {
 
 .footer .social-links {
   margin-top: 20px;
+
 }
 
 .footer .social-links a {
@@ -615,22 +616,27 @@ h6 {
 
 .linkedin {
   width: 55px;
+  /* margin: 200px; */
 
 }
 
 .instagram {
   width: 55px;
+  /* margin: 200px; */
 
 
 }
 
 .facebook {
   width: 55px;
+  /* margin: 200px; */
 
 }
 
 .media-icons {
-  margin: 10px;
+ 
+  width: 55px;
+
 }
 
 .copyright-icon {
@@ -1319,6 +1325,11 @@ section,
   overflow: hidden;
 }
 
+.faq-container .faq-item:hover {
+
+  border: 1px red;
+}
+
 .faq .faq-container .faq-item:last-child {
   margin-bottom: 0;
 }
@@ -1343,6 +1354,7 @@ section,
 .faq .faq-container .faq-item h3:hover {
   /* color: var(--accent-color); */
   color: #059649;
+
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1583,7 +1595,7 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -1595,7 +1607,7 @@ section,
 .contact .php-email-form input[type=text]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
 .contact .php-email-form button[type=submit] {
