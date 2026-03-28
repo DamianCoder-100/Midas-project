@@ -110,7 +110,8 @@ body {
 }
 
 .typed {
-  background: linear-gradient(135deg, #D4AF37, #F8C84B);
+  /* background: linear-gradient(135deg, #D4AF37, #F8C84B); */
+  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -247,7 +248,7 @@ h6 {
 
 
 .midas-logo {
-  width: ;
+  width: 600px;
   display: block;
 }
 
