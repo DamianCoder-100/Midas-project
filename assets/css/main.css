@@ -561,6 +561,7 @@ width: 200px;
 
 .footer .social-links {
   margin-top: 20px;
+  
 
 }
 
@@ -568,6 +569,7 @@ width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1474,7 +1476,7 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, rgb(77, 73, 50), transparent 0%);
+  background-color: color-mix(in srgb, rgb(115, 139, 118), transparent 0%);
   opacity: 0.5;
 }
 
@@ -1577,6 +1579,7 @@ body.map-is-fullscreen .arrow-pic{
   font-size: 14px;
   font-weight: 600;
   color: #006810;
+  width: 270px;
 }
 
 .contact .info-item:hover i {
